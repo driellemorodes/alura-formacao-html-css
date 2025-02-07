@@ -6,10 +6,6 @@ body {
   color: #f6f6f6;
 }
 
-header {
-  padding: 20px;
-}
-
 main {
   display: flex;
   align-items: center;
@@ -18,11 +14,6 @@ main {
 
 section {
   flex: 1;
-}
-
-ul {
-  display: flex;
-  gap: 16px;
 }
 
 h1 {
