@@ -1,67 +1,83 @@
 body {
-    background-color: #0d0d0d;
-    max-width: 1100px;
-    margin: auto;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #f6f6f6;
-  }
-  
-  header {
-    padding: 20px;
-  }
-  
-  main {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-  }
-  
-  section {
-    flex: 1;
-  }
-  
-  ul {
-    display: flex;
-    gap: 16px;
-  }
-  
-  h1 {
-    font-size: 32px;
-    font-weight: 600;
-  }
-  
-  strong {
-    color: #f28705;
-  }
-  
-  p {
-    font-size: 16px;
-    padding: 16px;
-  }
-  
-  a {
-    color: #f28705;
-  }
-  
-  div {
-    display: flex;
-    gap: 16px;
-  }
-  
-  button {
-    background-image: linear-gradient(to right, #bf2604, #f29f05);
-    color: #f6f6f6;
-    padding: 16px;
-    border: none;
-    display: flex;
-    gap: 8px;
-    border-radius: 16px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  
-  img {
-    border-radius: 48px;
-    width: 100%;
-  }
-  
+  background-color: #0d0d0d;
+  max-width: 1100px;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f6f6f6;
+}
+
+header {
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+section {
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 56px;
+}
+
+strong {
+  color: #f29f05;
+}
+
+.highlight-title {
+  color: #f28705;
+}
+
+.highlight-gradient {
+  background-image: linear-gradient(to right, #bf2604, #f28705);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  padding: 16px;
+}
+
+.call-to-action {
+  font-weight: bold;
+  font-style: italic;
+}
+
+a {
+  color: #f28705;
+  font-weight: bold;
+}
+
+div {
+  display: flex;
+  gap: 16px;
+}
+
+button {
+  background-image: linear-gradient(to right, #bf2604, #f29f05);
+  color: #f6f6f6;
+  padding: 16px;
+  border: none;
+  display: flex;
+  gap: 8px;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 48px;
+  width: 100%;
+}
