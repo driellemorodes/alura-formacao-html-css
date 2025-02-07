@@ -72,3 +72,8 @@ img {
   border-radius: 48px;
   width: 100%;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+}
