@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+:root {
+  --black-color: #0d0d0d;
+  --vivid-orange-color: #bf2604;
+  --orange-color: #f28705;
+  --light-orange-color: #f29f05;
+  --white-color: #f6f6f6;
+  --orange-gradient: linear-gradient(to right, #bf2604, #f28705);
+
+  --principal-font: "Ubuntu", serif;
+}
+
 body {
   min-height: 100dvh;
   box-sizing: border-box;
@@ -7,9 +18,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 32px;
-  background-color: #0d0d0d;
-  font-family: "Ubuntu", serif;
-  color: #f6f6f6;
+  background-color: var(--black-color);
+  font-family: var(--principal-font);
+  color: var(--white-color);
 }
 
 header {
@@ -25,7 +36,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #f6f6f6;
+  color: var(--white-color);
   font-weight: normal;
   text-transform: uppercase;
   font-size: 12px;
@@ -36,7 +47,7 @@ nav ul li a:hover {
   cursor: pointer;
   text-decoration: 1px underline;
   text-underline-offset: 8px;
-  text-decoration-color: #f29f05;
+  text-decoration-color: var(--orange-color);
 }
 
 main {
@@ -68,15 +79,15 @@ h1 {
 }
 
 strong {
-  color: #f29f05;
+  color: var(--light-orange-color);
 }
 
 .highlight-title {
-  color: #f28705;
+  color: var(--orange-color);
 }
 
 .highlight-gradient {
-  background-image: linear-gradient(to right, #bf2604, #f28705);
+  background-image: var(--orange-gradient);
   background-clip: text;
   color: transparent;
   font-weight: bold;
@@ -95,12 +106,12 @@ p {
 }
 
 a {
-  color: #f29f05;
+  color: var(--light-orange-color);
   font-weight: bold;
 }
 
 a:hover {
-  background-image: linear-gradient(to right, #bf2604, #f28705);
+  background-image: var(--orange-gradient);
   background-clip: text;
   color: transparent;
 }
@@ -129,19 +140,19 @@ ul {
   align-items: center;
   background-color: transparent;
   width: 150px;
-  color: #f6f6f6;
+  color: var(--white-color);
   border-radius: 16px;
   font-weight: 600;
   padding: 16px;
   cursor: pointer;
-  border: 1px solid #f28705;
+  border: 1px solid var(--orange-color);
   border-radius: 16px;
   padding: 16px;
 }
 
 .action-button:hover {
-  background-image: linear-gradient(to right, #bf2604, #f28705);
-  color: #f6f6f6;
+  background-image: var(--orange-gradient);
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -151,7 +162,7 @@ ul {
 }
 
 .action-button svg path {
-  fill: #f28705;
+  fill: var(--orange-color);
 }
 
 img {
@@ -167,8 +178,8 @@ img {
 }
 
 footer {
-  background-color: #f29f05;
-  color: #f6f6f6;
+  background-color: var(--light-orange-color);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,7 +191,7 @@ footer p {
 }
 
 footer a {
-  color: #0d0d0d;
+  color: var(--black-color);
 }
 
 .student-grid {
@@ -191,21 +202,21 @@ footer a {
 
 .info-button {
   display: flex;
-  background-color: #0d0d0d;
+  background-color: var(--black-color);
   justify-content: center;
   align-items: center;
-  color: #f6f6f6;
+  color: var(--white-color);
   border-radius: 16px;
   font-weight: 600;
   padding: 16px;
   cursor: pointer;
-  border: 1px solid #f28705;
+  border: 1px solid var(--orange-color);
   border-radius: 16px;
   padding: 16px;
 }
 
 .info-button:hover {
-  background-image: linear-gradient(to right, #bf2604, #f28705);
-  color: #f6f6f6;
+  background-image: var(--orange-gradient);
+  color: var(--white-color);
   cursor: pointer;
 }
