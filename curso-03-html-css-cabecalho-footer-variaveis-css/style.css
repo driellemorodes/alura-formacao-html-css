@@ -6,22 +6,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #0d0d0d;
-  max-width: 1100px;
   margin: auto;
+  background-color: #0d0d0d;
   font-family: "Ubuntu", serif;
   color: #f6f6f6;
-  padding: 20px;
 }
 
 main {
   display: flex;
+  flex-direction: column;
+  max-width: 1100px;
   align-items: center;
+  align-self: center;
   padding-bottom: 60px;
+  gap: 32px;
 }
 
-section {
-  flex: 1;
+.content {
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -55,16 +58,11 @@ p {
 }
 
 a {
-  color: #f28705;
+  color: #f29f05;
   font-weight: bold;
 }
 
-div {
-  display: flex;
-  gap: 16px;
-}
-
-.social-media {
+div.social-media {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -76,7 +74,11 @@ h3 {
   font-size: 18px;
 }
 
-button {
+.action-button {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   width: 150px;
   color: #f6f6f6;
@@ -84,18 +86,30 @@ button {
   font-weight: 600;
   padding: 16px;
   cursor: pointer;
-  text-align: center;
   border: 1px solid #f28705;
   border-radius: 16px;
   padding: 16px;
 }
 
-svg {
+.action-button:hover {
+  background-image: linear-gradient(to right, #bf2604, #f28705);
+  width: 150px;
+  color: #f6f6f6;
+  border-radius: 16px;
+  font-weight: 600;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.action-button svg {
   width: 16px;
   height: 16px;
 }
 
-.icon {
+.action-button svg path {
   fill: #f28705;
 }
 
@@ -104,7 +118,22 @@ img {
   width: 100%;
 }
 
-footer {
+.contact {
   display: flex;
-  justify-content: center;
+}
+
+footer {
+  background-color: #f28705;
+  color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+footer a {
+  color: #0d0d0d;
 }
