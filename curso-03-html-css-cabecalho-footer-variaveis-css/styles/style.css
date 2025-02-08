@@ -13,6 +13,12 @@ body {
   color: #f6f6f6;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  padding: 12px;
+}
+
 nav ul {
   display: flex;
   gap: 16px;
@@ -21,7 +27,6 @@ nav ul {
 
 nav ul li a {
   color: #f6f6f6;
-  font-weight: normal;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 12px;
@@ -38,14 +43,20 @@ nav ul li a:hover {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-self: center;
   gap: 32px;
 }
 
 .content {
   display: flex;
   align-items: center;
+}
+
+.content .info {
+  flex: 0.6;
+}
+
+.content .image {
+  flex: 0.4;
 }
 
 h1 {
@@ -70,7 +81,9 @@ strong {
 
 p {
   font-size: 16px;
-  padding: 16px;
+  font-weight: lighter;
+  padding: 8px;
+  line-height: 18px;
 }
 
 .call-to-action {
@@ -83,16 +96,27 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  background-image: linear-gradient(to right, #bf2604, #f28705);
+  background-clip: text;
+  color: transparent;
+}
+
 div.social-media {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  padding-top: 48px;
 }
 
 h3 {
   font-size: 18px;
+  padding: 16px;
+}
+
+ul {
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 .action-button {
@@ -114,15 +138,8 @@ h3 {
 
 .action-button:hover {
   background-image: linear-gradient(to right, #bf2604, #f28705);
-  width: 150px;
   color: #f6f6f6;
-  border-radius: 16px;
-  font-weight: 600;
-  padding: 16px;
   cursor: pointer;
-  text-align: center;
-  border-radius: 16px;
-  padding: 16px;
 }
 
 .action-button svg {
@@ -141,10 +158,13 @@ img {
 
 .contact {
   display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-  background-color: #f28705;
+  background-color: #f29f05;
   color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -153,8 +173,40 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
+  padding: 12px;
+}
+
+footer p {
+  font-size: 14px;
 }
 
 footer a {
   color: #0d0d0d;
+}
+
+.student-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.info-button {
+  display: flex;
+  background-color: #0d0d0d;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6f6;
+  border-radius: 16px;
+  font-weight: 600;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid #f28705;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.info-button:hover {
+  background-image: linear-gradient(to right, #bf2604, #f28705);
+  color: #f6f6f6;
+  cursor: pointer;
 }
