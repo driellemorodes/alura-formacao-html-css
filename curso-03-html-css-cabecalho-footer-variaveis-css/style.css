@@ -64,16 +64,39 @@ div {
   gap: 16px;
 }
 
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding-top: 48px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
 button {
-  background-image: linear-gradient(to right, #bf2604, #f29f05);
-  width: 100px;
+  background-color: transparent;
+  width: 150px;
   color: #f6f6f6;
   border-radius: 16px;
   font-weight: 600;
   padding: 16px;
-  border: none;
   cursor: pointer;
   text-align: center;
+  border: 1px solid #f28705;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+svg {
+  width: 16px;
+  height: 16px;
+}
+
+.icon {
+  fill: #f28705;
 }
 
 img {
