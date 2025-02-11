@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --black-color: #0d0d0d;
+  --vivid-orange-color: #bf2604;
+  --orange-color: #f28705;
+  --light-orange-color: #f29f05;
+  --white-color: #f6f6f6;
+  --orange-gradient: linear-gradient(to right, #bf2604, #f28705);
+
+  --principal-font: "Ubuntu", serif;
+}
+
+body {
+  min-height: 100dvh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  background-color: var(--black-color);
+  font-family: var(--principal-font);
+  color: var(--white-color);
+}
+
+header {
+  max-width: 1100px;
+  width: 100%;
+  align-self: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  padding: 12px 16px;
+}
+
+nav ul li a {
+  color: var(--white-color);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  text-decoration: 1px underline;
+  text-underline-offset: 8px;
+  text-decoration-color: var(--orange-color);
+}
+
+main {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 32px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.content .info {
+  flex: 0.6;
+}
+
+.content .image {
+  flex: 0.4;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+strong {
+  color: var(--light-orange-color);
+}
+
+.highlight-title {
+  color: var(--orange-color);
+}
+
+.highlight-gradient {
+  background-image: var(--orange-gradient);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 8px;
+  line-height: 18px;
+}
+
+.call-to-action {
+  font-weight: bold;
+  font-style: italic;
+}
+
+a {
+  color: var(--light-orange-color);
+  font-weight: bold;
+}
+
+a:hover {
+  background-image: var(--orange-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+div.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+h3 {
+  font-size: 18px;
+  padding: 16px;
+}
+
+ul {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.action-button {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 150px;
+  color: var(--white-color);
+  border-radius: 16px;
+  font-weight: 600;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid var(--orange-color);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.action-button:hover {
+  background-image: var(--orange-gradient);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.action-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.action-button svg path {
+  fill: var(--orange-color);
+}
+
+img {
+  border-radius: 48px;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: var(--light-orange-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--black-color);
+}
+
+.student-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.info-button {
+  display: flex;
+  background-color: var(--black-color);
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  border-radius: 16px;
+  font-weight: 600;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid var(--orange-color);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.info-button:hover {
+  background-image: var(--orange-gradient);
+  color: var(--white-color);
+  cursor: pointer;
+}
