@@ -66,11 +66,11 @@ main {
 }
 
 .content .info {
-  flex: 0.6;
+  flex: 0.5;
 }
 
 .content .image {
-  flex: 0.4;
+  flex: 0.5;
 }
 
 h1 {
@@ -219,4 +219,28 @@ footer a {
   background-image: var(--orange-gradient);
   color: var(--white-color);
   cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    gap: 24px;
+  }
+
+  .content .info {
+    flex: 0.5;
+    align-items: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
 }
