@@ -39,7 +39,7 @@ nav ul li a {
   color: var(--white-color);
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -74,8 +74,8 @@ main {
 }
 
 h1 {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 strong {
@@ -94,10 +94,10 @@ strong {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: lighter;
   padding: 8px;
-  line-height: 18px;
+  line-height: 1.2rem;
 }
 
 .call-to-action {
@@ -124,12 +124,12 @@ div.social-media {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.5rem;
   padding: 16px;
 }
 
 ul {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: lighter;
 }
 
@@ -187,7 +187,7 @@ footer {
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 footer a {
