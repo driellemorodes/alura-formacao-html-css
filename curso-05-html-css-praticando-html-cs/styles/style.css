@@ -12,4 +12,21 @@
 
 body {
   background-color: var(--bg-color);
+  color: var(--principal);
+  font-family: var(--principal-font);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.principal {
+  background-image: url(curso-05-html-css-praticando-html-cs/assets/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  height: 100vh;
 }
