@@ -22,7 +22,7 @@ h1 {
 }
 
 .principal {
-  background-image: url(curso-05-html-css-praticando-html-cs/assets/background.png);
+  background-image: url("/curso-05-html-css-praticando-html-cs/assets/background.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
